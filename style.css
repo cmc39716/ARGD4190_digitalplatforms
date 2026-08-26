@@ -1,0 +1,19 @@
+body{background-color:#EDE7DB;}
+h1{color:black;}
+p{color:black;}
+.blue-paragraph{color:blue;}
+#title{
+    font-size:72px;
+    font-family: "altogether", sans-serif;
+    color:#CC5500}
+.handwritten{font-family: "gladly-mailed", sans-serif;
+            color:#4D342D}
+.smallertitles {font-family: "kuhlman-vf", sans-serif;
+                font-size:30px;
+            color:#6a6a53}
+.smallesttitles{font-family: "slight-chance", sans-serif;
+                font-size:20px;
+                color:#7C0D0E}
+.buttons{font-family: "callifont-daynote-brush", sans-serif;
+        font-size:20px;
+        color:#152238}
