@@ -1171,4 +1171,302 @@ p::selection {
     }
 
 
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+#title {
+    font-size: clamp(3rem, 9vw, 8rem);
+    margin-top: clamp(80px, 12vw, 200px);
+    margin-bottom: clamp(80px, 12vw, 200px);
+}
+
+.smallertitles {
+    font-size: clamp(2rem, 5vw, 4rem);
+    letter-spacing: clamp(2px, 0.3vw, 8px);
+}
+
+.smallesttitles {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.handwritten,
+.intro-text,
+.gd-text {
+    font-size: clamp(1rem, 1.6vw, 1.4rem);
+    line-height: 1.5;
+}
+
+
+
+.photo,
+.photo2,
+.photo3,
+.gd-photo1,
+.gd-photo2 {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main larger image */
+.photo {
+    width: min(500px, 80vw);
+}
+
+/* Smaller image */
+.photo2 {
+    width: min(300px, 65vw);
+}
+
+/* Medium image */
+.photo3 {
+    width: min(400px, 75vw);
+}
+
+
+
+.mycontainer,
+.writingcontainer,
+.gd-category {
+    width: min(90%, 1400px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-text {
+    width: min(85%, 900px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gd-text {
+    width: min(60%, 900px);
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .photo {
+        width: min(450px, 70vw);
+    }
+
+    .photo2 {
+        width: min(280px, 55vw);
+    }
+
+    .photo3 {
+        width: min(360px, 65vw);
+    }
+
+    .gd-text {
+        width: 70%;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        justify-content: center;
+        gap: 18px;
+        font-size: 22px;
+    }
+
+    .smallertitles {
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .photo {
+        width: min(420px, 75vw);
+    }
+
+    .photo2 {
+        width: min(270px, 60vw);
+    }
+
+    .photo3 {
+        width: min(340px, 68vw);
+    }
+
+    .gd-category {
+        width: 88%;
+    }
+
+    .gd-text {
+        width: 75%;
+    }
+
+    .writing-left,
+    .writing-right,
+    .writing-center {
+        width: 75%;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 0 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    #title {
+        font-size: clamp(3rem, 16vw, 5rem);
+        margin-top: 60px;
+        margin-bottom: 70px;
+    }
+
+    .smallertitles {
+        font-size: clamp(2rem, 10vw, 3rem);
+        margin-top: 50px;
+        margin-bottom: 40px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .smallesttitles {
+        font-size: clamp(1.4rem, 7vw, 2rem);
+    }
+
+    .handwritten,
+    .intro-text,
+    .gd-text {
+        font-size: clamp(1rem, 4.5vw, 1.2rem);
+        line-height: 1.6;
+    }
+
+    .photo,
+    .photo2,
+    .photo3 {
+        width: 85vw;
+        max-width: 100%;
+    }
+
+    .gd-photo1,
+    .gd-photo2 {
+        width: 82vw;
+    }
+
+    .gd-category {
+        width: 92%;
+        margin-top: 50px;
+        margin-bottom: 90px;
+    }
+
+    .gd-text {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gd-heading {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gd-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .writing-left,
+    .writing-right,
+    .writing-center {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .writing-left,
+    .writing-right,
+    .writing-center,
+    .writing-left .handwritten,
+    .writing-right .handwritten,
+    .writing-center .handwritten,
+    .writing-left .smallesttitles,
+    .writing-right .smallesttitles,
+    .writing-center .smallesttitles {
+        text-align: left;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .photo,
+    .photo2,
+    .photo3,
+    .gd-photo1,
+    .gd-photo2 {
+        width: 88vw;
+    }
+
+    .handwritten,
+    .intro-text,
+    .gd-text {
+        font-size: 1rem;
+    }
+
+    .buttons,
+    .buttons2 {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+}
+
 }
