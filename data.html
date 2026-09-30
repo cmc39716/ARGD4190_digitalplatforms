@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- ADOBE FONTS -->
+
+    <link
+        rel="stylesheet"
+        href="https://use.typekit.net/pyp3bkf.css"
+    >
+
+    <script>
+        (function(d) {
+
+            var config = {
+                    kitId: "pyp3bkf",
+                    scriptTimeout: 3000,
+                    async: true
+                },
+
+                h = d.documentElement,
+
+                t = setTimeout(function() {
+
+                    h.className =
+                        h.className.replace(/\bwf-loading\b/g, "") +
+                        " wf-inactive";
+
+                }, config.scriptTimeout),
+
+                tk = d.createElement("script"),
+
+                f = false,
+
+                s = d.getElementsByTagName("script")[0],
+
+                a;
+
+
+            h.className += " wf-loading";
+
+
+            tk.src =
+                "https://use.typekit.net/" +
+                config.kitId +
+                ".js";
+
+
+            tk.async = true;
+
+
+            tk.onload =
+                tk.onreadystatechange =
+                function() {
+
+                    a = this.readyState;
+
+                    if (
+                        f ||
+                        a &&
+                        a != "complete" &&
+                        a != "loaded"
+                    ) {
+                        return;
+                    }
+
+                    f = true;
+
+                    clearTimeout(t);
+
+                    try {
+
+                        Typekit.load(config);
+
+                    }
+
+                    catch(e) {}
+
+                };
+
+
+            s.parentNode.insertBefore(tk, s);
+
+
+        })(document);
+    </script>
+
+
+
+    <!-- META -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+
+    <title>
+        Photography Collection
+    </title>
+
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="reset.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <nav>
+
+        <ul class="navbar">
+
+
+            <li class="buttons2">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+            </li>
+
+
+            <li class="buttons2">
+
+                <a href="Myreason.html">
+                    My Reason
+                </a>
+
+            </li>
+
+
+            <li class="buttons2">
+
+                <a href="Writings.html">
+                    Writings
+                </a>
+
+            </li>
+
+
+            <li class="buttons2">
+
+                <a href="Photography.html">
+                    Photography
+                </a>
+
+            </li>
+
+
+            <li class="buttons2">
+
+                <a href="MainGD.html">
+                    Graphic Design
+                </a>
+
+            </li>
+
+
+            <li class="buttons2">
+
+                <a href="data.html">
+                    Collection
+                </a>
+
+            </li>
+
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- ==============================
+         COLLECTION HEADER
+    =============================== -->
+
+    <header class="collection-header">
+
+        <h1 id="title">
+            The Photography
+            <br>
+            Collection
+        </h1>
+
+
+        <p class="handwritten">
+
+            The photos I think are so cool.
+
+            A mix of styles, subjects, mediums,
+            and photographers.
+
+            I really want to express how wide
+            the field of photography is.
+
+            There are so many possibilities.
+
+            You can do anything.
+
+            Go do anything.
+
+            Do the Hard Things.
+
+        </p>
+
+    </header>
+
+
+
+    <!-- ==============================
+         INTRODUCTION
+    =============================== -->
+
+    <section class="collection-intro">
+
+        <h2 class="smallertitles">
+            Explore
+        </h2>
+
+
+        <p class="handwritten">
+
+            I want you to be able to explore
+            my collection.
+
+            I want you to see the variety
+            in the world.
+
+            Look through the different photographs
+            to learn about the photographer,
+            location, medium, and date.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- ==============================
+         FILTERS
+    =============================== -->
+
+    <section class="collection-filters">
+
+
+        <div class="collection-filter-title">
+
+            Photography Type
+
+        </div>
+
+
+
+        <div class="filter-buttons">
+
+
+            <button
+                class="filter-button active"
+                data-filter="all"
+            >
+                All
+            </button>
+
+
+            <button
+                class="filter-button"
+                data-filter="portrait"
+            >
+                Portrait
+            </button>
+
+
+            <button
+                class="filter-button"
+                data-filter="sports"
+            >
+                Sports
+            </button>
+
+
+            <button
+                class="filter-button"
+                data-filter="documentary"
+            >
+                Documentary
+            </button>
+
+
+            <button
+                class="filter-button"
+                data-filter="observation"
+            >
+                Observation
+            </button>
+
+
+            <button
+                class="filter-button"
+                data-filter="staged"
+            >
+                Staged
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==============================
+         SORT
+    =============================== -->
+
+    <section class="collection-tools">
+
+
+        <div id="photo-count">
+
+            Loading photographs...
+
+        </div>
+
+
+        <select id="sort">
+
+
+            <option value="original">
+
+                Original Order
+
+            </option>
+
+
+            <option value="newest">
+
+                Newest → Oldest
+
+            </option>
+
+
+            <option value="oldest">
+
+                Oldest → Newest
+
+            </option>
+
+
+        </select>
+
+
+    </section>
+
+
+
+    <!-- ==============================
+         PHOTOGRAPHS
+
+         DO NOT PUT PHOTOS HERE.
+
+         JavaScript automatically creates
+         the photographs from photos.json.
+    =============================== -->
+
+    <main id="photo-grid">
+
+    </main>
+
+
+
+    <!-- ==============================
+         PHOTO MODAL
+    =============================== -->
+
+    <div id="photo-modal">
+
+
+        <div class="modal-box">
+
+
+            <button id="close-modal">
+
+                ×
+
+            </button>
+
+
+
+            <img
+                id="modal-image"
+                class="modal-image"
+                src=""
+                alt=""
+            >
+
+
+
+            <div class="modal-information">
+
+
+                <h2 id="modal-title">
+
+                </h2>
+
+
+
+                <div class="modal-label">
+
+                    Photographer
+
+                </div>
+
+
+                <div
+                    class="modal-value"
+                    id="modal-photographer"
+                >
+                </div>
+
+
+
+                <div class="modal-label">
+
+                    Time Period
+
+                </div>
+
+
+                <div
+                    class="modal-value"
+                    id="modal-year"
+                >
+                </div>
+
+
+
+                <div class="modal-label">
+
+                    Location
+
+                </div>
+
+
+                <div
+                    class="modal-value"
+                    id="modal-location"
+                >
+                </div>
+
+
+
+                <div class="modal-label">
+
+                    Photography Type
+
+                </div>
+
+
+                <div
+                    class="modal-value"
+                    id="modal-type"
+                >
+                </div>
+
+
+
+                <div class="modal-label">
+
+                    Medium
+
+                </div>
+
+
+                <div
+                    class="modal-value"
+                    id="modal-medium"
+                >
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+  <script src="collection.js"></script>
+
+
+</body>
+
+</html>

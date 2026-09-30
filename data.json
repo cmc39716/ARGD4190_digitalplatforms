@@ -1,0 +1,425 @@
+[
+    {
+        "title": "Afghan Girl – Sharbat Gula, the Afghan Girl",
+        "image": "2.webp",
+        "photographer": "Steve McCurry",
+        "time_period": 1984,
+        "location": "Nasir Bagh refugee camp near Peshawar, Pakistan",
+        "photography_type": "portrait",
+        "medium": "Kodachrome 64 color slide film"
+    },
+    {
+        "title": "Camels Pass Burning Oil Fields During the 1991 Gulf War",
+        "image": "3.webp",
+        "photographer": "Steve McCurry",
+        "time_period": 1991,
+        "location": "Kuwait",
+        "photography_type": "documentary",
+        "medium": "Color film photography"
+    },
+    {
+        "title": "Untitled",
+        "image": "4.webp",
+        "photographer": "Steve McCurry",
+        "time_period": "2014/2014",
+        "location": "Omo Valley, Ethiopia",
+        "photography_type": "portrait",
+        "medium": "Color photograph / Fine-art photographic print"
+    },
+    {
+        "title": "Untitled",
+        "image": "5.webp",
+        "photographer": "Steve McCurry",
+        "time_period": 2013,
+        "location": "Omo Valley, Ethiopia",
+        "photography_type": "portrait",
+        "medium": "Color photograph / Digital"
+    },
+    {
+        "title": "Cotton Mill Gin (Sadie Pfeifer)",
+        "image": "6.jpg",
+        "photographer": "Lewis Hine",
+        "time_period": 1908,
+        "location": "Lancaster Cotton Mills, Lancaster, South Carolina",
+        "photography_type": "documentary",
+        "medium": "Black-and-white photographic print"
+    },
+    {
+        "title": "Dalí Atomicus",
+        "image": "7.jpg",
+        "photographer": "Philippe Halsman",
+        "time_period": 1948,
+        "location": "New York, New York",
+        "photography_type": "portrait",
+        "medium": "Gelatin silver print"
+    },
+    {
+        "title": "Muhammad Ali v Sonny Liston",
+        "image": "8.jpg",
+        "photographer": "Neil Leifer",
+        "time_period": 1965,
+        "location": "St. Dominick's Arena, Lewiston, Maine",
+        "photography_type": "sports",
+        "medium": "Color film / Chromogenic (Type-C) print"
+    },
+    {
+        "title": "Ali–Williams Fight, Houston Astrodome",
+        "image": "9.png",
+        "photographer": "Neil Liefer",
+        "time_period": 1966,
+        "location": "Houston Astrodome, Houston, Texas",
+        "photography_type": "sports",
+        "medium": "Color film photography"
+    },
+    {
+        "title": "Untitled",
+        "image": "10.webp",
+        "photographer": "Unknown",
+        "time_period": "Mid-20th century",
+        "location": "Yankee Stadium, New York City",
+        "photography_type": "sports",
+        "medium": "Black-and-white film photography"
+    },
+    {
+        "title": "The Slam Dunk – Michael Jordan",
+        "image": "11.png",
+        "photographer": "Walter Iooss Jr",
+        "time_period": 1988,
+        "location": "Chicago",
+        "photography_type": "sports",
+        "medium": "Digital DSLR"
+    },
+    {
+        "title": "Mo Farah Wins 5000m Gold",
+        "image": "12.png",
+        "photographer": "Tom Jenkins",
+        "time_period": 2012,
+        "location": "Olympic Stadium, London, England",
+        "photography_type": "sports",
+        "medium": "Digitial"
+    },
+    {
+        "title": "AFL Semi Final - Fremantle v Geelong",
+        "image": "13.jpg",
+        "photographer": "Paul Kane",
+        "time_period": "11-Sep-26",
+        "location": "Optus Stadium PERTH, AUSTRALIA",
+        "photography_type": "sports",
+        "medium": "Digital"
+    },
+    {
+        "title": "NRL Elimination Final - Rabbitohs v Knights",
+        "image": "14.jpg",
+        "photographer": "Cameron Spencer",
+        "time_period": "11-Sep-26",
+        "location": "Allianz Stadium in Sydney, Australia",
+        "photography_type": "sports",
+        "medium": "Digital"
+    },
+    {
+        "title": "AFL Rd 23 - Western Bulldogs v Carlton",
+        "image": "15.jpg",
+        "photographer": "Morgan Hancock",
+        "time_period": "August 16 2026",
+        "location": "Marvel Stadium, on August 16, 2026, in Melbourne, Australia",
+        "photography_type": "sports",
+        "medium": "Digital"
+    },
+    {
+        "title": "Untitled",
+        "image": "16.jpg",
+        "photographer": "Menzies",
+        "time_period": "Septemeber 12 2026",
+        "location": "Stanford Stadium Athens GA",
+        "photography_type": "sports",
+        "medium": "Digital"
+    },
+    {
+        "title": "Untitled",
+        "image": "17.jpg",
+        "photographer": "Tony Walsh",
+        "time_period": "Septemeber 12 2026",
+        "location": "Stanford Stadium Athens GA",
+        "photography_type": "sports",
+        "medium": "Digital"
+    },
+    {
+        "title": "Krishna",
+        "image": "18.jpg",
+        "photographer": "Réhahn",
+        "time_period": "",
+        "location": "India",
+        "photography_type": "portrait",
+        "medium": "Digital"
+    },
+    {
+        "title": "Department Store, Mobile, Alabama",
+        "image": "19.webp",
+        "photographer": "Gordon Parks",
+        "time_period": 1956,
+        "location": "Mobile Alabama",
+        "photography_type": "documentary",
+        "medium": "Color film / pigment print"
+    },
+    {
+        "title": "Serra Pelada Gold Mine, State of Pará, Brazil",
+        "image": "20.webp",
+        "photographer": "Sebastião Salgado",
+        "time_period": 1986,
+        "location": "Serra Pelada, Pará, Brazil",
+        "photography_type": "documentary",
+        "medium": "Gelatin silver print"
+    },
+    {
+        "title": "Boulevard du Temple",
+        "image": "21.jpg",
+        "photographer": "Louis Daguerre",
+        "time_period": 1838,
+        "location": "Paris, France",
+        "photography_type": "observation",
+        "medium": "Daguerreotype"
+    },
+    {
+        "title": "Dovima with Elephants",
+        "image": "22.jpg",
+        "photographer": "Richard Avedon",
+        "time_period": 1955,
+        "location": "Cirque d'Hiver, Paris, France",
+        "photography_type": "portrait",
+        "medium": "Gelatin silver print"
+    },
+    {
+        "title": "American Gothic (government employee Ella Watson)",
+        "image": "23.webp",
+        "photographer": "Gordon Parks",
+        "time_period": 1942,
+        "location": "Washington DC",
+        "photography_type": "documentary",
+        "medium": "Gelatin silver print"
+    },
+    {
+        "title": "Untitled",
+        "image": "24.webp",
+        "photographer": "Stanley Wolfson",
+        "time_period": "Jul-64",
+        "location": "Harlem, New York",
+        "photography_type": "documentary",
+        "medium": "Black-and-white photograph"
+    },
+    {
+        "title": "Children in Sheffield",
+        "image": "25.webp",
+        "photographer": "Bill Brandt",
+        "time_period": "1940s",
+        "location": "Sheffiled, England",
+        "photography_type": "observation",
+        "medium": "Gelatin silver print"
+    },
+    {
+        "title": "Northumbrian Miner",
+        "image": "26.webp",
+        "photographer": "Bill Brandt",
+        "time_period": 1937,
+        "location": "Northumberland, England",
+        "photography_type": "observation",
+        "medium": "Gelatin silver print"
+    },
+    {
+        "title": "Rue Mouffetard",
+        "image": "27.webp",
+        "photographer": "Henri Cartier-Bresson",
+        "time_period": 1954,
+        "location": "Paris",
+        "photography_type": "observation",
+        "medium": "Gelatin silver print"
+    },
+    {
+        "title": "Untitled",
+        "image": "28.webp",
+        "photographer": "Henri Cartier-Bresson",
+        "time_period": 1934,
+        "location": "Mexico",
+        "photography_type": "observation",
+        "medium": "Gelatin silver print"
+    },
+    {
+        "title": "Stairsy",
+        "image": "29.webp",
+        "photographer": "Patty Carroll",
+        "time_period": 2017,
+        "location": "Studio / Chicago, Illinois",
+        "photography_type": "staged",
+        "medium": "Archival pigment print"
+    },
+    {
+        "title": "Dished",
+        "image": "30.webp",
+        "photographer": "Patty Carroll",
+        "time_period": 2017,
+        "location": "Studio / Chicago, Illinois",
+        "photography_type": "staged",
+        "medium": "Archival pigment print"
+    },
+    {
+        "title": "Apples and Oranges",
+        "image": "31.webp",
+        "photographer": "Patty Carroll",
+        "time_period": 2017,
+        "location": "Studio / Chicago, Illinois",
+        "photography_type": "staged",
+        "medium": "Archival pigment print"
+    },
+    {
+        "title": "Counting Her Chickens",
+        "image": "32.webp",
+        "photographer": "Patty Carroll",
+        "time_period": 2017,
+        "location": "Studio / Chicago, Illinois",
+        "photography_type": "staged",
+        "medium": "Archival pigment print"
+    },
+    {
+        "title": "Canned",
+        "image": "33.webp",
+        "photographer": "Patty Carroll",
+        "time_period": 2017,
+        "location": "Studio / Chicago, Illinois",
+        "photography_type": "staged",
+        "medium": "Archival pigment print"
+    },
+    {
+        "title": "Zebra 1",
+        "image": "34.webp",
+        "photographer": "Nine Francois",
+        "time_period": 2018,
+        "location": "Studio/United States",
+        "photography_type": "portrait",
+        "medium": "Archival pigment print"
+    },
+    {
+        "title": "Owl IV, Saw Whet",
+        "image": "35.webp",
+        "photographer": "Nine Francois",
+        "time_period": 2018,
+        "location": "Studio/United States",
+        "photography_type": "portrait",
+        "medium": "Archival pigment print"
+    },
+    {
+        "title": "Cadillac Showroom",
+        "image": "36.webp",
+        "photographer": "Robert Frank",
+        "time_period": 1955,
+        "location": "New York City, New York",
+        "photography_type": "observation",
+        "medium": "Gelatin silver print"
+    },
+    {
+        "title": "False Food, F308",
+        "image": "37.webp",
+        "photographer": "Jerry Takigawa",
+        "time_period": 2015,
+        "location": "Monterey, California",
+        "photography_type": "staged",
+        "medium": "Archival pigment print"
+    },
+    {
+        "title": "2A and a Father",
+        "image": "38.webp",
+        "photographer": "Jerry Takigawa",
+        "time_period": 2017,
+        "location": "Monterey, California",
+        "photography_type": "staged",
+        "medium": "Archival pigment print"
+    },
+    {
+        "title": "Like Goes With Like",
+        "image": "39.webp",
+        "photographer": "Jerry Takigawa",
+        "time_period": 2019,
+        "location": "Monterey, California/Studio Work",
+        "photography_type": "staged",
+        "medium": "Archival pigment print"
+    },
+    {
+        "title": "Ebbets Field (1955)",
+        "image": "40.webp",
+        "photographer": "Robert Weingarten",
+        "time_period": 2016,
+        "location": "Brooklyn, New York",
+        "photography_type": "staged",
+        "medium": "Archival pigment print"
+    },
+    {
+        "title": "Untitled",
+        "image": "41.jpg",
+        "photographer": "Vivian Maier",
+        "time_period": 1953,
+        "location": "New York, New York",
+        "photography_type": "observation",
+        "medium": "Black-and-white film / gelatin silver print"
+    },
+    {
+        "title": "Untitled",
+        "image": "42.jpg",
+        "photographer": "Vivian Maier",
+        "time_period": "1950s",
+        "location": "New York, New York",
+        "photography_type": "observation",
+        "medium": "Black-and-white film / gelatin silver print"
+    },
+    {
+        "title": "Untitled",
+        "image": "43.jpg",
+        "photographer": "Vivian Maier",
+        "time_period": "1960s",
+        "location": "Chicago IL",
+        "photography_type": "observation",
+        "medium": "Black-and-white film / gelatin silver print"
+    },
+    {
+        "title": "Untitled",
+        "image": "44.jpg",
+        "photographer": "Vivian Maier",
+        "time_period": "1950s",
+        "location": "New York, New York",
+        "photography_type": "observation",
+        "medium": "Black-and-white film / gelatin silver print"
+    },
+    {
+        "title": "Untitled",
+        "image": "45.jpg",
+        "photographer": "Vivian Maier",
+        "time_period": "1950s",
+        "location": "New York, New York",
+        "photography_type": "observation",
+        "medium": "Black-and-white film / gelatin silver print"
+    },
+    {
+        "title": "Untitled",
+        "image": "46.jpg",
+        "photographer": "Vivian Maier",
+        "time_period": 1954,
+        "location": "New York, New York",
+        "photography_type": "observation",
+        "medium": "Black-and-white film / gelatin silver print"
+    },
+    {
+        "title": "Self-portrait",
+        "image": "47.jpg",
+        "photographer": "Vivian Maier",
+        "time_period": 1954,
+        "location": "New York, New York",
+        "photography_type": "portrait",
+        "medium": "Black-and-white film / gelatin silver print"
+    },
+    {
+        "title": "Hashem el Madani",
+        "image": "48.jpg",
+        "photographer": "Akram Zaatari",
+        "time_period": 2007,
+        "location": "Saida, Lebanon",
+        "photography_type": "portrait",
+        "medium": "Chromogenic print / archival photographic print"
+    }
+]

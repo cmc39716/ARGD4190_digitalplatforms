@@ -19,9 +19,6 @@
 }
 
 
-/* =====================================================
-   GLOBAL
-   ===================================================== */
 
 * {
     box-sizing: border-box;
@@ -50,9 +47,6 @@ p::selection {
 }
 
 
-/* =====================================================
-   MAIN TITLE
-   ===================================================== */
 
 #title {
     font-family: "altogether", sans-serif;
@@ -66,9 +60,6 @@ p::selection {
 }
 
 
-/* =====================================================
-   TYPOGRAPHY
-   ===================================================== */
 
 .handwritten {
     font-family: "gladly-mailed", sans-serif;
@@ -103,9 +94,6 @@ p::selection {
 }
 
 
-/* =====================================================
-   BUTTONS
-   ===================================================== */
 
 .buttons,
 .buttons2 {
@@ -194,10 +182,6 @@ p::selection {
 }
 
 
-/* =====================================================
-   NAVIGATION
-   ===================================================== */
-
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -226,9 +210,6 @@ p::selection {
 }
 
 
-/* =====================================================
-   GENERAL CONTAINERS
-   ===================================================== */
 
 .mycontainer {
     width: min(90%, 1400px);
@@ -253,9 +234,6 @@ p::selection {
 }
 
 
-/* =====================================================
-   HOME PAGE INTRO SECTIONS
-   ===================================================== */
 
 .intro-row {
     display: flex;
@@ -305,9 +283,6 @@ p::selection {
 }
 
 
-/* =====================================================
-   INTRO TEXT
-   ===================================================== */
 
 .intro-text {
     width: min(85%, 900px);
@@ -345,9 +320,6 @@ p::selection {
 }
 
 
-/* =====================================================
-   WORK SECTIONS
-   ===================================================== */
 
 .work-row {
     display: flex;
@@ -383,9 +355,7 @@ p::selection {
 }
 
 
-/* =====================================================
-   PHOTOGRAPHY CATEGORY PAGE
-   ===================================================== */
+
 
 .photo-category {
     width: 80%;
@@ -1320,6 +1290,669 @@ p::selection {
     .controls {
         width: 90%;
         max-width: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   PHOTOGRAPHY COLLECTION
+===================================================== */
+
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+.collection-header {
+    width: min(90%, 1300px);
+    margin: 140px auto 170px;
+    position: relative;
+}
+
+.collection-header h1 {
+    font-family: "altogether", sans-serif;
+    font-size: clamp(4rem, 10vw, 9rem);
+    line-height: .8;
+
+    color: var(--orange);
+
+    text-transform: none;
+    text-align: left;
+
+    max-width: 1000px;
+    margin: 0;
+}
+
+
+/* handwritten intro */
+
+.collection-header p {
+    font-family: "gladly-mailed", sans-serif;
+    font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+    line-height: 1.5;
+
+    color: var(--brown);
+
+    width: min(70%, 700px);
+
+    margin-top: 70px;
+    margin-left: auto;
+
+    text-align: right;
+
+    transform: rotate(-2deg);
+}
+
+
+
+/* -------------------------
+   EXPLORE SECTION
+------------------------- */
+
+.collection-intro {
+    width: min(85%, 1000px);
+    margin: 0 auto 130px;
+}
+
+.collection-intro h2 {
+    font-family: "kuhlman-vf", sans-serif;
+
+    font-size: clamp(3rem, 7vw, 6rem);
+
+    letter-spacing: 8px;
+
+    color: var(--olive);
+
+    text-align: left;
+
+    margin-bottom: 50px;
+
+    transform: rotate(-2deg);
+}
+
+.collection-intro p {
+    font-family: "gladly-mailed", sans-serif;
+
+    color: var(--brown);
+
+    font-size: clamp(1rem, 1.6vw, 1.4rem);
+
+    line-height: 1.6;
+
+    width: 70%;
+
+    margin-left: 12%;
+}
+
+
+
+/* -------------------------
+   FILTER SECTION
+------------------------- */
+
+.collection-filters {
+    width: min(90%, 1200px);
+
+    margin: 0 auto 50px;
+
+    padding: 40px;
+
+    border: 3px dotted var(--red);
+
+    transform: rotate(.5deg);
+
+    position: relative;
+}
+
+
+/* second imperfect border */
+
+.collection-filters::before {
+    content: "";
+
+    position: absolute;
+
+    top: -8px;
+    left: 5px;
+    right: -6px;
+    bottom: 6px;
+
+    border: 2px solid var(--orange);
+
+    pointer-events: none;
+
+    transform: rotate(-.4deg);
+}
+
+
+.collection-filter-title {
+    font-family: "slight-chance", sans-serif;
+
+    color: var(--red);
+
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+
+
+/* -------------------------
+   FILTER BUTTONS
+------------------------- */
+
+.filter-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+
+.filter-button {
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    font-size: clamp(1rem, 1.4vw, 1.3rem);
+
+    color: var(--navy);
+
+    background: transparent;
+
+    border: 2px dotted var(--red);
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    text-transform: lowercase;
+
+    transition:
+        background-color .2s ease,
+        color .2s ease,
+        transform .2s ease;
+}
+
+
+.filter-button:nth-child(odd) {
+    transform: rotate(-2deg);
+}
+
+.filter-button:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+
+.filter-button:hover,
+.filter-button.active {
+    background: var(--navy);
+
+    color: var(--background-color);
+
+    border-color: var(--navy);
+
+    transform: rotate(0deg) scale(1.05);
+}
+
+
+
+/* -------------------------
+   SORT + COUNT
+------------------------- */
+
+.collection-tools {
+    width: min(90%, 1200px);
+
+    margin: 60px auto 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+#photo-count {
+    font-family: "gladly-mailed", sans-serif;
+
+    color: var(--brown);
+
+    font-size: 1.2rem;
+}
+
+
+#sort {
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    color: var(--navy);
+
+    font-size: 1rem;
+
+    background: transparent;
+
+    border: 2px dotted var(--red);
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+}
+
+
+
+/* =====================================================
+   PHOTO COLLECTION
+===================================================== */
+
+#photo-grid {
+    width: min(90%, 1400px);
+
+    margin: 0 auto 150px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 100px 45px;
+}
+
+
+
+/* -------------------------
+   PHOTO CARDS
+------------------------- */
+
+.photo-card {
+    cursor: pointer;
+
+    position: relative;
+}
+
+
+/* make the cards alternate slightly */
+
+.photo-card:nth-child(3n + 1) {
+    transform: rotate(-2deg);
+}
+
+.photo-card:nth-child(3n + 2) {
+    transform: rotate(2deg);
+}
+
+.photo-card:nth-child(3n + 3) {
+    transform: rotate(-1deg);
+}
+
+
+
+.photo-container {
+    position: relative;
+
+    padding: 10px;
+
+    background: var(--red);
+
+    border: 3px solid var(--orange);
+
+    border-radius:
+        2% 1% 3% 1% /
+        1% 3% 1% 2%;
+
+    transition: transform .25s ease;
+}
+
+
+/* imperfect second frame */
+
+.photo-container::before {
+    content: "";
+
+    position: absolute;
+
+    top: -7px;
+    left: -6px;
+    right: -8px;
+    bottom: -6px;
+
+    border: 2px solid var(--brown);
+
+    border-radius:
+        1% 3% 1% 2% /
+        3% 1% 2% 1%;
+
+    pointer-events: none;
+}
+
+
+.photo-image {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+}
+
+
+
+/* -------------------------
+   HOVER
+------------------------- */
+
+.photo-overlay {
+    position: absolute;
+
+    inset: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(21, 34, 56, .85);
+
+    color: var(--background-color);
+
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    font-size: 1.5rem;
+
+    opacity: 0;
+
+    transition: opacity .25s ease;
+
+    text-align: center;
+}
+
+
+.photo-card:hover .photo-overlay {
+    opacity: 1;
+}
+
+
+.photo-card:hover .photo-container {
+    transform: scale(1.03) rotate(1deg);
+}
+
+
+
+/* -------------------------
+   PHOTO INFORMATION
+------------------------- */
+
+.photo-title {
+    font-family: "slight-chance", sans-serif;
+
+    color: var(--red);
+
+    font-size: clamp(1.4rem, 2vw, 2rem);
+
+    margin-top: 25px;
+}
+
+
+.photo-photographer {
+    font-family: "gladly-mailed", sans-serif;
+
+    color: var(--brown);
+
+    font-size: 1.1rem;
+
+    margin-top: 8px;
+}
+
+
+.photo-year {
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    color: var(--olive);
+
+    font-size: 1rem;
+
+    margin-top: 5px;
+}
+
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+#photo-modal {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(21, 34, 56, .88);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 1000;
+
+    padding: 30px;
+}
+
+
+#photo-modal.show {
+    display: flex;
+}
+
+
+
+.modal-box {
+    width: min(90%, 1100px);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 1fr;
+
+    gap: 50px;
+
+    background: var(--background-color);
+
+    padding: 45px;
+
+    border: 5px solid var(--orange);
+
+    transform: rotate(-1deg);
+}
+
+
+.modal-image {
+    width: 100%;
+
+    max-height: 70vh;
+
+    object-fit: contain;
+
+    border: 8px solid var(--red);
+}
+
+
+.modal-information {
+    align-self: center;
+}
+
+
+.modal-information h2 {
+    font-family: "altogether", sans-serif;
+
+    color: var(--orange);
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    line-height: .85;
+
+    margin-bottom: 40px;
+}
+
+
+.modal-label {
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    color: var(--olive);
+
+    font-size: .9rem;
+
+    margin-top: 20px;
+}
+
+
+.modal-value {
+    font-family: "gladly-mailed", sans-serif;
+
+    color: var(--brown);
+
+    font-size: 1.2rem;
+
+    margin-top: 4px;
+}
+
+
+#close-modal {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    border: none;
+
+    background: none;
+
+    color: var(--red);
+
+    font-family: "slight-chance", sans-serif;
+
+    font-size: 3rem;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media screen and (max-width: 900px) {
+
+    #photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection-header p {
+        width: 85%;
+    }
+
+    .collection-intro p {
+        width: 85%;
+    }
+
+    .modal-box {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media screen and (max-width: 600px) {
+
+    .collection-header {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .collection-header h1 {
+        font-size: clamp(4rem, 19vw, 6rem);
+    }
+
+    .collection-header p {
+        width: 95%;
+
+        margin-top: 50px;
+
+        text-align: left;
+    }
+
+
+    .collection-intro h2 {
+        text-align: center;
+
+        letter-spacing: 4px;
+    }
+
+    .collection-intro p {
+        width: 100%;
+
+        margin-left: 0;
+    }
+
+
+    .collection-filters {
+        padding: 30px 15px;
+    }
+
+
+    .filter-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    #photo-grid {
+        grid-template-columns: 1fr;
+
+        width: 85%;
+
+        gap: 90px;
+    }
+
+
+    .collection-tools {
+        flex-direction: column;
+
+        gap: 20px;
+
+        align-items: flex-start;
+    }
+
+
+    .modal-box {
+        padding: 30px 20px;
+
+        gap: 30px;
     }
 
 }
