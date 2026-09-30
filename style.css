@@ -1311,24 +1311,50 @@ p::selection {
    HEADER
 ------------------------- */
 
+/* COLLECTION HEADER */
+
 .collection-header {
-    width: min(90%, 1300px);
-    margin: 140px auto 170px;
-    position: relative;
+    min-height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 40px;
 }
+
 
 .collection-header h1 {
     font-family: "altogether", sans-serif;
-    font-size: clamp(4rem, 10vw, 9rem);
-    line-height: .8;
 
-    color: var(--orange);
+    font-size: clamp(70px, 9vw, 150px);
 
-    text-transform: none;
-    text-align: left;
+    line-height: 0.85;
 
-    max-width: 1000px;
-    margin: 0;
+    color: #d65300;
+
+    text-align: center;
+
+    width: 100%;
+    max-width: 1500px;
+
+    margin: 0 auto 50px auto;
+}
+
+
+.collection-header p {
+    font-family: "gladly-mailed", sans-serif;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    line-height: 1.5;
 }
 
 
