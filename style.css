@@ -377,9 +377,7 @@ p::selection {
 }
 
 
-/* =====================================================
-   SINGLE SECTIONS
-   ===================================================== */
+
 
 .single-section {
     display: flex;
@@ -397,9 +395,7 @@ p::selection {
 }
 
 
-/* =====================================================
-   PHOTOS
-   ===================================================== */
+
 
 .photo,
 .photo2,
@@ -444,9 +440,7 @@ p::selection {
 }
 
 
-/* =====================================================
-   PHOTO FRAMES
-   ===================================================== */
+
 
 .box,
 .box2 {
@@ -507,9 +501,6 @@ p::selection {
 }
 
 
-/* =====================================================
-   GRAPHIC DESIGN FRAMES
-   ===================================================== */
 
 .boxgd1,
 .boxgd2 {
@@ -541,9 +532,7 @@ p::selection {
 }
 
 
-/* =====================================================
-   MAIN BOX
-   ===================================================== */
+
 
 .boxmain {
     position: relative;
@@ -565,9 +554,7 @@ p::selection {
 }
 
 
-/* =====================================================
-   LINKS SECTION
-   ===================================================== */
+
 
 .links-section {
     text-align: center;
@@ -1391,13 +1378,13 @@ p::selection {
 .collection-intro h2 {
     font-family: "kuhlman-vf", sans-serif;
 
-    font-size: clamp(3rem, 7vw, 6rem);
+    font-size: clamp(2rem, 5vw, 4rem);
 
     letter-spacing: 8px;
 
     color: var(--olive);
 
-    text-align: left;
+    text-align: center;
 
     margin-bottom: 50px;
 
@@ -1420,26 +1407,381 @@ p::selection {
 
 
 
-/* -------------------------
+/* =====================================================
    FILTER SECTION
-------------------------- */
+===================================================== */
+
+/* =====================================================
+   FILTER SECTION — COMPACT
+===================================================== */
 
 .collection-filters {
-    width: min(90%, 1200px);
+    width: min(88%, 1350px);
 
-    margin: 0 auto 50px;
+    margin: 0 auto 55px;
 
-    padding: 40px;
+    padding: 30px 45px 32px;
+
+    position: relative;
 
     border: 3px dotted var(--red);
 
-    transform: rotate(.5deg);
-
-    position: relative;
+    transform: rotate(.2deg);
 }
 
 
-/* second imperfect border */
+/* ORANGE IMPERFECT BORDER */
+
+.collection-filters::before {
+    content: "";
+
+    position: absolute;
+
+    top: -6px;
+    left: 6px;
+    right: -7px;
+    bottom: 5px;
+
+    border: 2px solid var(--orange);
+
+    pointer-events: none;
+
+    transform: rotate(-.3deg);
+}
+
+
+/* FILTERS TITLE */
+
+.filters-heading {
+    font-family: "kuhlman-vf", sans-serif;
+
+    font-size: clamp(2.5rem, 4vw, 4rem);
+
+    color: var(--navy);
+
+    text-align: center;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+
+/* TWO-COLUMN FILTER LAYOUT */
+
+.filter-dropdowns {
+    width: min(100%, 1100px);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 50px;
+
+    row-gap: 22px;
+}
+
+
+/* EACH FILTER */
+
+.filter-dropdown-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+/* FILTER LABELS */
+
+.filter-dropdown-group label {
+    font-family: "slight-chance", sans-serif;
+
+    font-size: clamp(1.4rem, 2vw, 2rem);
+
+    color: var(--red);
+
+    line-height: 1;
+
+    margin-left: 10px;
+}
+
+
+/* DROPDOWN BOXES */
+
+.filter-select {
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 9px 45px 9px 18px;
+
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    font-size: clamp(.9rem, 1.2vw, 1.1rem);
+
+    color: var(--navy);
+
+    background-color: var(--background-color);
+
+    border: 2px dotted var(--red);
+
+    border-radius: 0;
+
+    cursor: pointer;
+
+    text-transform: lowercase;
+
+    transition:
+        background-color .2s ease,
+        color .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+}
+
+
+/* LITTLE HAND-DRAWN ROTATIONS */
+
+.filter-dropdown-group:nth-child(1) .filter-select {
+    transform: rotate(-.4deg);
+}
+
+.filter-dropdown-group:nth-child(2) .filter-select {
+    transform: rotate(.4deg);
+}
+
+.filter-dropdown-group:nth-child(3) .filter-select {
+    transform: rotate(.3deg);
+}
+
+.filter-dropdown-group:nth-child(4) .filter-select {
+    transform: rotate(-.3deg);
+}
+
+
+/* HOVER */
+
+.filter-select:hover {
+    border-color: var(--navy);
+}
+
+
+/* FOCUS */
+
+.filter-select:focus {
+    outline: 3px solid var(--orange);
+
+    outline-offset: 4px;
+
+    border-color: var(--navy);
+}
+
+
+/* DROPDOWN OPTIONS */
+
+.filter-select option {
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    color: var(--navy);
+
+    background-color: var(--background-color);
+}
+
+
+/* RESET BUTTON AREA */
+
+.reset-filter-container {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 25px;
+}
+
+
+/* RESET BUTTON */
+
+.reset-filter-button {
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    font-size: 1rem;
+
+    color: var(--red);
+
+    background-color: transparent;
+
+    border: 2px dotted var(--red);
+
+    padding: 9px 22px;
+
+    cursor: pointer;
+
+    text-transform: lowercase;
+
+    transform: rotate(-1deg);
+
+    transition:
+        background-color .2s ease,
+        color .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+}
+
+
+.reset-filter-button:hover {
+    background-color: var(--red);
+
+    color: var(--background-color);
+
+    border-color: var(--red);
+
+    transform: rotate(1deg);
+}
+
+
+.reset-filter-button:focus-visible {
+    outline: 3px solid var(--orange);
+
+    outline-offset: 4px;
+}
+
+
+/* =====================================================
+   NO RESULTS
+===================================================== */
+
+.no-results {
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+
+    color: var(--red);
+}
+
+
+
+/* =====================================================
+   FILTERS — TABLET
+===================================================== */
+
+@media screen and (max-width: 900px) {
+
+    .collection-filters {
+        width: 90%;
+
+        padding: 45px 30px 50px;
+    }
+
+
+    .filter-dropdowns {
+        column-gap: 30px;
+
+        row-gap: 40px;
+    }
+
+
+    .filters-heading {
+        margin-bottom: 45px;
+    }
+
+}
+
+
+
+/* =====================================================
+   FILTERS — MOBILE
+===================================================== */
+
+@media screen and (max-width: 600px) {
+
+    .collection-filters {
+        width: 92%;
+
+        padding: 35px 20px 40px;
+
+        margin-bottom: 50px;
+    }
+
+
+    .filters-heading {
+        font-size: clamp(2.5rem, 14vw, 4rem);
+
+        text-align: center;
+
+        margin-bottom: 40px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .filter-dropdowns {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .filter-dropdown-group label {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+
+        margin-left: 5px;
+    }
+
+
+    .filter-select {
+        width: 100%;
+
+        min-height: 55px;
+
+        font-size: 1rem;
+    }
+
+
+    .reset-filter-container {
+        margin-top: 40px;
+    }
+
+
+    .reset-filter-button {
+        width: 100%;
+
+        padding: 14px 20px;
+    }
+
+}
+
+
+
+/* =========================================
+   FILTER AREA
+========================================= */
+
+.collection-filters {
+    width: min(92%, 1500px);
+
+    margin: 0 auto 70px;
+    padding: 55px 45px;
+
+    border: 3px dotted var(--red);
+
+    position: relative;
+
+    transform: rotate(.2deg);
+}
+
+
+/* imperfect second border */
 
 .collection-filters::before {
     content: "";
@@ -1447,46 +1789,78 @@ p::selection {
     position: absolute;
 
     top: -8px;
-    left: 5px;
-    right: -6px;
-    bottom: 6px;
+    left: 6px;
+    right: -7px;
+    bottom: 5px;
 
     border: 2px solid var(--orange);
 
     pointer-events: none;
 
-    transform: rotate(-.4deg);
+    transform: rotate(-.3deg);
 }
 
+
+/* FILTERS heading */
+
+.filters-heading {
+    font-family: "kuhlman-vf", sans-serif;
+
+    font-size: clamp(2rem, 3vw, 3rem);
+
+    color: var(--navy);
+
+    margin-bottom: 55px;
+
+    text-align: center;
+
+    letter-spacing: 3px;
+}
+
+
+/* each category */
+
+.filter-group {
+    margin-bottom: 55px;
+}
+
+
+.filter-group:last-child {
+    margin-bottom: 0;
+}
+
+
+/* category title */
 
 .collection-filter-title {
     font-family: "slight-chance", sans-serif;
 
     color: var(--red);
 
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-size: clamp(1.4rem, 2.5vw, 2.3rem);
 
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
-    text-align: center;
+    text-align: left;
+
+    padding-left: 15px;
 }
 
 
-
-/* -------------------------
-   FILTER BUTTONS
-------------------------- */
+/* button container */
 
 .filter-buttons {
     display: flex;
 
-    justify-content: center;
-
     flex-wrap: wrap;
 
     gap: 15px;
+
+    justify-content: flex-start;
 }
 
+
+/* individual buttons */
 
 .filter-button {
     font-family: "callifont-daynote-brush", sans-serif;
@@ -1495,11 +1869,13 @@ p::selection {
 
     color: var(--navy);
 
-    background: transparent;
+    background-color: transparent;
 
     border: 2px dotted var(--red);
 
-    padding: 10px 20px;
+    padding: 12px 24px;
+
+    min-width: 120px;
 
     cursor: pointer;
 
@@ -1512,24 +1888,59 @@ p::selection {
 }
 
 
+/* imperfect button angles */
+
 .filter-button:nth-child(odd) {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
 }
 
 .filter-button:nth-child(even) {
-    transform: rotate(2deg);
+    transform: rotate(1deg);
 }
 
 
-.filter-button:hover,
+/* hover */
+
+.filter-button:hover {
+    background-color: var(--red);
+
+    color: var(--background-color);
+}
+
+
+/* selected */
+
 .filter-button.active {
-    background: var(--navy);
+    background-color: var(--navy);
 
     color: var(--background-color);
 
     border-color: var(--navy);
+}
 
-    transform: rotate(0deg) scale(1.05);
+
+/* mobile */
+
+@media (max-width: 700px) {
+
+    .collection-filters {
+        padding: 35px 20px;
+    }
+
+    .filters-heading {
+        text-align: left;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .filter-button {
+        width: 100%;
+    }
+
 }
 
 
@@ -1596,32 +2007,51 @@ p::selection {
 
 
 
-/* -------------------------
+/* =====================================================
    PHOTO CARDS
-------------------------- */
+===================================================== */
 
 .photo-card {
     cursor: pointer;
-
     position: relative;
+
+    /*
+        This transition makes the whole card smoothly
+        move from its tilted position to straight.
+    */
+    transition:
+        transform 0.3s ease,
+        z-index 0s;
+
+    z-index: 1;
 }
 
 
-/* make the cards alternate slightly */
+/* =====================================================
+   ALTERNATING CARD TILTS
+===================================================== */
 
+/* first card */
 .photo-card:nth-child(3n + 1) {
     transform: rotate(-2deg);
 }
 
+
+/* second card */
 .photo-card:nth-child(3n + 2) {
     transform: rotate(2deg);
 }
 
+
+/* third card */
 .photo-card:nth-child(3n + 3) {
     transform: rotate(-1deg);
 }
 
 
+/* =====================================================
+   PHOTO FRAME
+===================================================== */
 
 .photo-container {
     position: relative;
@@ -1636,11 +2066,17 @@ p::selection {
         2% 1% 3% 1% /
         1% 3% 1% 2%;
 
-    transition: transform .25s ease;
+    /*
+        The frame itself does not need to rotate
+        separately anymore.
+    */
+    transition: transform 0.3s ease;
 }
 
 
-/* imperfect second frame */
+/* =====================================================
+   IMPERFECT SECOND FRAME
+===================================================== */
 
 .photo-container::before {
     content: "";
@@ -1662,6 +2098,10 @@ p::selection {
 }
 
 
+/* =====================================================
+   PHOTO IMAGE
+===================================================== */
+
 .photo-image {
     display: block;
 
@@ -1673,10 +2113,9 @@ p::selection {
 }
 
 
-
-/* -------------------------
-   HOVER
-------------------------- */
+/* =====================================================
+   PHOTO OVERLAY
+===================================================== */
 
 .photo-overlay {
     position: absolute;
@@ -1686,32 +2125,83 @@ p::selection {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     background: rgba(21, 34, 56, .85);
 
     color: var(--background-color);
 
-    font-family: "callifont-daynote-brush", sans-serif;
+    font-family:
+        "callifont-daynote-brush",
+        sans-serif;
 
     font-size: 1.5rem;
 
     opacity: 0;
 
-    transition: opacity .25s ease;
+    transition: opacity 0.25s ease;
 
     text-align: center;
 }
 
+
+/* =====================================================
+   PHOTO HOVER
+===================================================== */
+
+
+.photo-card:hover {
+    transform:
+        rotate(0deg)
+        scale(1.09);
+
+    z-index: 20;
+}
+
+
+.photo-card:hover .photo-container {
+    transform: none;
+}
+
+
+/* show the dark overlay */
 
 .photo-card:hover .photo-overlay {
     opacity: 1;
 }
 
 
-.photo-card:hover .photo-container {
-    transform: scale(1.03) rotate(1deg);
+/* =====================================================
+   KEYBOARD ACCESSIBILITY
+===================================================== */
+
+.photo-card:focus-visible {
+    transform:
+        rotate(0deg)
+        scale(1.05);
+
+    z-index: 20;
+
+    outline: 3px solid var(--orange);
+    outline-offset: 8px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media screen and (max-width: 600px) {
+
+    /*
+        Phones don't really have hover,
+        so keep the cards at their normal size.
+    */
+
+    .photo-card:hover {
+        transform: rotate(0deg);
+    }
+
 }
 
 
@@ -1736,7 +2226,7 @@ p::selection {
 
     color: var(--brown);
 
-    font-size: 1.1rem;
+     font-size: clamp(1.6rem, 2vw, 2rem);
 
     margin-top: 8px;
 }
@@ -1747,7 +2237,7 @@ p::selection {
 
     color: var(--olive);
 
-    font-size: 1rem;
+   font-size: clamp(1.6rem, 2vw, 2rem);
 
     margin-top: 5px;
 }
@@ -1761,27 +2251,46 @@ p::selection {
 #photo-modal {
     position: fixed;
 
-    inset: 0;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
 
     background: rgba(21, 34, 56, .88);
 
     display: none;
 
     align-items: center;
-
     justify-content: center;
 
-    z-index: 1000;
+    z-index: 9999;
 
     padding: 30px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
 }
 
+
+/* when modal is opened */
 
 #photo-modal.show {
     display: flex;
 }
 
+.modal-content {
+    position: relative;
 
+    width: min(900px, 90vw);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    margin: auto;
+}
 
 .modal-box {
     width: min(90%, 1100px);
@@ -1825,15 +2334,15 @@ p::selection {
 
 
 .modal-information h2 {
-    font-family: "altogether", sans-serif;
+    font-family: "kuhlman-vf", sans-serif;
 
-    color: var(--orange);
+      color: var(--orange);
 
-    font-size: clamp(3rem, 5vw, 5rem);
-
-    line-height: .85;
-
-    margin-bottom: 40px;
+    font-size: clamp(2rem, 3.2vw, 3.5rem);
+    line-height: .9;
+   
+    white-space: nowrap;
+     margin-bottom: 40px;
 }
 
 
@@ -1842,7 +2351,7 @@ p::selection {
 
     color: var(--olive);
 
-    font-size: .9rem;
+    font-size: 1.7rem;
 
     margin-top: 20px;
 }
@@ -1850,11 +2359,11 @@ p::selection {
 
 .modal-value {
     font-family: "gladly-mailed", sans-serif;
-
     color: var(--brown);
 
-    font-size: 1.2rem;
+    font-size: clamp(1.8rem, 2.5vw, 2.4rem);
 
+    line-height: 1.15;
     margin-top: 4px;
 }
 
@@ -1979,6 +2488,556 @@ p::selection {
         padding: 30px 20px;
 
         gap: 30px;
+    }
+
+}
+
+/* =====================================================
+   MODAL ARTICLE LINK
+===================================================== */
+
+.modal-link {
+    display: none;
+
+    margin-top: 32px;
+
+    width: fit-content;
+
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    font-size: 1rem;
+
+    color: var(--red);
+
+    text-decoration: none;
+
+    border-bottom: 2px dotted var(--red);
+
+    padding-bottom: 5px;
+
+    transition:
+        color .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+}
+
+
+.modal-link:hover {
+    color: var(--orange);
+
+    border-color: var(--orange);
+
+    transform: rotate(-1deg);
+}
+
+
+.modal-link:focus-visible {
+    outline: 2px solid var(--orange);
+
+    outline-offset: 5px;
+}
+
+
+/* ==========================================
+   PHOTOGRAPHER CAROUSEL
+========================================== */
+
+.artist-section {
+    width: min(92%, 1450px);
+    margin: 120px auto 100px;
+    padding-top: 65px;
+    border-top: 3px dotted var(--red);
+    position: relative;
+}
+
+
+/* second imperfect line */
+
+.artist-section::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 2%;
+    width: 96%;
+    border-top: 2px solid var(--orange);
+    transform: rotate(-.15deg);
+}
+
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
+
+.artist-section-heading {
+    text-align: center;
+    width: min(850px, 90%);
+    margin: 0 auto 55px;
+}
+
+
+.artist-eyebrow {
+    font-family: "callifont-daynote-brush", sans-serif;
+    color: var(--olive);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+
+.artist-section-heading h2 {
+    font-family: "kuhlman-vf", sans-serif;
+    color: var(--navy);
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    line-height: .9;
+    margin: 0 0 20px;
+}
+
+
+.artist-section-intro {
+    font-family: "gladly-mailed", sans-serif;
+    color: var(--brown);
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    line-height: 1.2;
+}
+
+
+/* ==========================================
+   CAROUSEL
+========================================== */
+
+.artist-carousel {
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr) 70px;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.artist-carousel-window {
+    overflow: hidden;
+    padding: 18px;
+}
+
+
+.artist-carousel-track {
+    display: flex;
+    transition: transform .55s ease;
+}
+
+
+/* ==========================================
+   ARTIST CARD
+========================================== */
+
+.artist-card {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns:
+        minmax(280px, .85fr)
+        minmax(350px, 1.15fr);
+    gap: 55px;
+    align-items: center;
+
+    background-color: var(--background-color);
+
+    border: 4px solid var(--red);
+
+    padding: 45px;
+
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+
+/* orange offset border */
+
+.artist-card::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 9px;
+    right: -10px;
+    bottom: 8px;
+    border: 3px solid var(--orange);
+    pointer-events: none;
+    transform: rotate(.35deg);
+}
+
+
+/* ==========================================
+   ARTIST IMAGE
+========================================== */
+
+.artist-image-wrap {
+    position: relative;
+    transform: rotate(-1.5deg);
+}
+
+
+.artist-image-wrap::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 100%;
+    height: 100%;
+    border: 3px dotted var(--olive);
+    z-index: 0;
+}
+
+
+.artist-image {
+    display: block;
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    border: 7px solid var(--navy);
+
+    box-sizing: border-box;
+
+    filter: grayscale(100%);
+}
+
+
+/* ==========================================
+   ARTIST INFORMATION
+========================================== */
+
+.artist-info {
+    position: relative;
+    z-index: 2;
+}
+
+
+.artist-number {
+    font-family: "callifont-daynote-brush", sans-serif;
+    color: var(--olive);
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+
+.artist-name {
+    font-family: "kuhlman-vf", sans-serif;
+    color: var(--red);
+
+    font-size: clamp(
+        2.6rem,
+        5vw,
+        5.5rem
+    );
+
+    line-height: .9;
+
+    margin: 0 0 15px;
+}
+
+
+.artist-years {
+    font-family: "gladly-mailed", sans-serif;
+    color: var(--orange);
+
+    font-size: clamp(
+        1.5rem,
+        2vw,
+        2.2rem
+    );
+
+    margin-bottom: 25px;
+}
+
+
+.artist-bio {
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    color: var(--brown);
+
+    font-size: clamp(
+        1rem,
+        1.35vw,
+        1.25rem
+    );
+
+    line-height: 1.6;
+
+    max-width: 650px;
+
+    margin-bottom: 28px;
+}
+
+
+/* ==========================================
+   ARTIST LINK
+========================================== */
+
+.artist-link {
+    display: inline-block;
+
+    font-family: "callifont-daynote-brush", sans-serif;
+
+    color: var(--red);
+
+    text-decoration: none;
+
+    border-bottom:
+        2px dotted var(--red);
+
+    padding-bottom: 5px;
+
+    transition:
+        color .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+}
+
+
+.artist-link:hover {
+    color: var(--orange);
+    border-color: var(--orange);
+    transform: rotate(-1deg);
+}
+
+
+/* ==========================================
+   ARROWS
+========================================== */
+
+.artist-arrow {
+    width: 62px;
+    height: 62px;
+
+    border: 3px dotted var(--red);
+
+    background:
+        var(--background-color);
+
+    color: var(--red);
+
+    font-family:
+        "slight-chance",
+        sans-serif;
+
+    font-size: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        background-color .2s ease,
+        color .2s ease,
+        transform .2s ease;
+}
+
+
+.artist-arrow-left {
+    transform: rotate(-3deg);
+}
+
+
+.artist-arrow-right {
+    transform: rotate(3deg);
+}
+
+
+.artist-arrow:hover {
+    background-color: var(--red);
+    color: var(--background-color);
+}
+
+
+.artist-arrow-left:hover {
+    transform: rotate(2deg);
+}
+
+
+.artist-arrow-right:hover {
+    transform: rotate(-2deg);
+}
+
+
+/* ==========================================
+   BOTTOM CONTROLS
+========================================== */
+
+.artist-carousel-bottom {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.artist-counter {
+    font-family:
+        "callifont-daynote-brush",
+        sans-serif;
+
+    color: var(--olive);
+
+    font-size: .95rem;
+}
+
+
+.artist-dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 8px;
+
+    max-width: 600px;
+}
+
+
+.artist-dot {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    border: 1px solid var(--red);
+
+    background: transparent;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+
+.artist-dot.active {
+    background: var(--red);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .artist-section {
+        margin-top: 80px;
+    }
+
+
+    .artist-carousel {
+        grid-template-columns:
+            50px
+            minmax(0, 1fr)
+            50px;
+
+        gap: 10px;
+    }
+
+
+    .artist-arrow {
+        width: 45px;
+        height: 45px;
+        font-size: 1.7rem;
+    }
+
+
+    .artist-card {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 35px;
+    }
+
+
+    .artist-image-wrap {
+        width: min(400px, 90%);
+        margin: auto;
+    }
+
+
+    .artist-info {
+        text-align: center;
+    }
+
+
+    .artist-bio {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+/* ==========================================
+   PHONE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .artist-section {
+        width: 94%;
+        margin-top: 65px;
+        padding-top: 45px;
+    }
+
+
+    .artist-carousel {
+        display: grid;
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 15px;
+    }
+
+
+    .artist-carousel-window {
+        grid-column: 1 / -1;
+        grid-row: 1;
+
+        padding: 12px;
+    }
+
+
+    .artist-arrow {
+        grid-row: 2;
+
+        width: 100%;
+
+        margin-top: 5px;
+    }
+
+
+    .artist-arrow-left {
+        grid-column: 1;
+    }
+
+
+    .artist-arrow-right {
+        grid-column: 2;
+    }
+
+
+    .artist-card {
+        padding: 25px 20px;
+    }
+
+
+    .artist-name {
+        font-size: 2.5rem;
+    }
+
+
+    .artist-bio {
+        font-size: .95rem;
     }
 
 }

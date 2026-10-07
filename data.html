@@ -4,7 +4,23 @@
 
 <head>
 
-    <!-- ADOBE FONTS -->
+    <!-- ==========================================
+         META
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Photography Collection</title>
+
+
+    <!-- ==========================================
+         ADOBE FONTS
+    =========================================== -->
 
     <link
         rel="stylesheet"
@@ -83,29 +99,13 @@
 
             s.parentNode.insertBefore(tk, s);
 
-
         })(document);
     </script>
 
 
-
-    <!-- META -->
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-
-    <title>
-        Photography Collection
-    </title>
-
-
-
-    <!-- CSS -->
+    <!-- ==========================================
+         CSS
+    =========================================== -->
 
     <link
         rel="stylesheet"
@@ -120,13 +120,12 @@
 </head>
 
 
-
 <body>
 
 
-    <!-- ==============================
+    <!-- ==========================================
          NAVIGATION
-    =============================== -->
+    =========================================== -->
 
     <nav>
 
@@ -181,7 +180,7 @@
             <li class="buttons2">
 
                 <a href="data.html">
-                    Collection
+                    inspiration
                 </a>
 
             </li>
@@ -193,16 +192,19 @@
 
 
 
-    <!-- ==============================
-         COLLECTION HEADER
-    =============================== -->
+    <!-- ==========================================
+         PAGE HEADER
+    =========================================== -->
 
     <header class="collection-header">
 
+
         <h1 id="title">
+
             The Photography
             <br>
             Collection
+
         </h1>
 
 
@@ -226,15 +228,17 @@
 
         </p>
 
+
     </header>
 
 
 
-    <!-- ==============================
+    <!-- ==========================================
          INTRODUCTION
-    =============================== -->
+    =========================================== -->
 
     <section class="collection-intro">
+
 
         <h2 class="smallertitles">
             Explore
@@ -255,159 +259,354 @@
 
         </p>
 
+
     </section>
 
 
 
-    <!-- ==============================
+    <!-- ==========================================
          FILTERS
-    =============================== -->
+    =========================================== -->
 
     <section class="collection-filters">
 
 
-        <div class="collection-filter-title">
+        <div class="filters-heading">
+            FILTERS
+        </div>
 
-            Photography Type
+
+        <div class="filter-dropdowns">
+
+
+            <!-- PHOTOGRAPHY TYPE -->
+
+            <div class="filter-dropdown-group">
+
+                <label for="type-filter">
+                    Photography Type
+                </label>
+
+                <select
+                    id="type-filter"
+                    class="filter-select"
+                    data-group="type"
+                >
+
+                    <option value="all">
+                        All
+                    </option>
+
+                    <option value="portrait">
+                        Portrait
+                    </option>
+
+                    <option value="sports">
+                        Sports
+                    </option>
+
+                    <option value="documentary">
+                        Documentary
+                    </option>
+
+                    <option value="observation">
+                        Observation
+                    </option>
+
+                    <option value="staged">
+                        Staged
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- TIME PERIOD -->
+
+            <div class="filter-dropdown-group">
+
+                <label for="time-filter">
+                    Time Period
+                </label>
+
+                <select
+                    id="time-filter"
+                    class="filter-select"
+                    data-group="time"
+                >
+
+                    <option value="all">
+                        All
+                    </option>
+
+                    <option value="1800">
+                        1800s
+                    </option>
+
+                    <option value="1900">
+                        1900–1949
+                    </option>
+
+                    <option value="1950">
+                        1950–1999
+                    </option>
+
+                    <option value="2000">
+                        2000–Present
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- MEDIUM -->
+
+            <div class="filter-dropdown-group">
+
+                <label for="medium-filter">
+                    Medium
+                </label>
+
+                <select
+                    id="medium-filter"
+                    class="filter-select"
+                    data-group="medium"
+                >
+
+                    <option value="all">
+                        All
+                    </option>
+
+                    <option value="digital">
+                        Digital
+                    </option>
+
+                    <option value="color">
+                        Color Film
+                    </option>
+
+                    <option value="black-and-white">
+                        Black + White
+                    </option>
+
+                    <option value="silver">
+                        Silver Print
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- LOCATION -->
+
+            <div class="filter-dropdown-group">
+
+                <label for="location-filter">
+                    Location
+                </label>
+
+                <select
+                    id="location-filter"
+                    class="filter-select"
+                    data-group="location"
+                >
+
+                    <option value="all">
+                        All
+                    </option>
+
+                    <option value="united states">
+                        United States
+                    </option>
+
+                    <option value="europe">
+                        Europe
+                    </option>
+
+                    <option value="asia">
+                        Asia
+                    </option>
+
+                    <option value="africa">
+                        Africa
+                    </option>
+
+                    <option value="australia">
+                        Australia
+                    </option>
+
+                </select>
+
+            </div>
+
 
         </div>
 
 
 
-        <div class="filter-buttons">
+        <!-- RESET FILTERS -->
 
-
-            <button
-                class="filter-button active"
-                data-filter="all"
-            >
-                All
-            </button>
-
+        <div class="reset-filter-container">
 
             <button
-                class="filter-button"
-                data-filter="portrait"
+                type="button"
+                id="reset-filters"
+                class="reset-filter-button"
             >
-                Portrait
+                Reset Filters
             </button>
-
-
-            <button
-                class="filter-button"
-                data-filter="sports"
-            >
-                Sports
-            </button>
-
-
-            <button
-                class="filter-button"
-                data-filter="documentary"
-            >
-                Documentary
-            </button>
-
-
-            <button
-                class="filter-button"
-                data-filter="observation"
-            >
-                Observation
-            </button>
-
-
-            <button
-                class="filter-button"
-                data-filter="staged"
-            >
-                Staged
-            </button>
-
 
         </div>
+
 
     </section>
 
 
 
-    <!-- ==============================
-         SORT
-    =============================== -->
+    <!-- ==========================================
+         COLLECTION TOOLS / SORT
+    =========================================== -->
 
     <section class="collection-tools">
 
 
         <div id="photo-count">
-
             Loading photographs...
-
         </div>
 
 
         <select id="sort">
-
-
-            <option value="original">
-
-                Original Order
-
-            </option>
-
-
-            <option value="newest">
-
-                Newest → Oldest
-
-            </option>
-
-
-            <option value="oldest">
-
-                Oldest → Newest
-
-            </option>
-
-
-        </select>
+    <option value="original">Original Order</option>
+    <option value="newest">Newest → Oldest</option>
+    <option value="oldest">Oldest → Newest</option>
+    <option value="photographer-az">Photographer A → Z</option>
+    <option value="photographer-za">Photographer Z → A</option>
+</select>
 
 
     </section>
 
 
 
-    <!-- ==============================
-         PHOTOGRAPHS
-
-         DO NOT PUT PHOTOS HERE.
-
-         JavaScript automatically creates
-         the photographs from photos.json.
-    =============================== -->
+    <!-- ==========================================
+         PHOTOGRAPH GRID
+    =========================================== -->
 
     <main id="photo-grid">
 
     </main>
 
+<!-- =====================================
+     PHOTOGRAPHER CAROUSEL
+====================================== -->
+
+<section class="artist-section">
+
+    <div class="artist-section-heading">
+
+        <p class="artist-eyebrow">
+            THE PEOPLE BEHIND THE CAMERA
+        </p>
+
+        <h2>
+            MEET THE PHOTOGRAPHERS
+        </h2>
+
+        <p class="artist-section-intro">
+            Learn more about the photographers
+            whose work appears throughout the collection.
+        </p>
+
+    </div>
 
 
-    <!-- ==============================
+    <div class="artist-carousel">
+
+        <button
+            type="button"
+            class="artist-arrow artist-arrow-left"
+            id="artist-prev"
+            aria-label="Previous photographer"
+        >
+            ←
+        </button>
+
+
+        <div class="artist-carousel-window">
+
+            <div
+                class="artist-carousel-track"
+                id="artist-carousel-track"
+            >
+            </div>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="artist-arrow artist-arrow-right"
+            id="artist-next"
+            aria-label="Next photographer"
+        >
+            →
+        </button>
+
+    </div>
+
+
+    <div class="artist-carousel-bottom">
+
+        <div
+            class="artist-counter"
+            id="artist-counter"
+        >
+        </div>
+
+        <div
+            class="artist-dots"
+            id="artist-dots"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ==========================================
          PHOTO MODAL
-    =============================== -->
+    =========================================== -->
 
-    <div id="photo-modal">
+    <div
+        id="photo-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+    >
 
 
         <div class="modal-box">
 
 
-            <button id="close-modal">
+            <!-- CLOSE BUTTON -->
 
+            <button
+                type="button"
+                id="close-modal"
+                aria-label="Close photograph details"
+            >
                 ×
-
             </button>
 
 
+
+            <!-- LARGE PHOTO -->
 
             <img
                 id="modal-image"
@@ -418,8 +617,12 @@
 
 
 
+            <!-- PHOTO INFORMATION -->
+
             <div class="modal-information">
 
+
+                <!-- PHOTO TITLE -->
 
                 <h2 id="modal-title">
 
@@ -427,12 +630,11 @@
 
 
 
+                <!-- PHOTOGRAPHER -->
+
                 <div class="modal-label">
-
                     Photographer
-
                 </div>
-
 
                 <div
                     class="modal-value"
@@ -442,12 +644,11 @@
 
 
 
+                <!-- TIME PERIOD -->
+
                 <div class="modal-label">
-
                     Time Period
-
                 </div>
-
 
                 <div
                     class="modal-value"
@@ -457,12 +658,11 @@
 
 
 
+                <!-- LOCATION -->
+
                 <div class="modal-label">
-
                     Location
-
                 </div>
-
 
                 <div
                     class="modal-value"
@@ -472,12 +672,11 @@
 
 
 
+                <!-- PHOTOGRAPHY TYPE -->
+
                 <div class="modal-label">
-
                     Photography Type
-
                 </div>
-
 
                 <div
                     class="modal-value"
@@ -487,12 +686,11 @@
 
 
 
+                <!-- MEDIUM -->
+
                 <div class="modal-label">
-
                     Medium
-
                 </div>
-
 
                 <div
                     class="modal-value"
@@ -501,17 +699,35 @@
                 </div>
 
 
+
+                <!-- ARTICLE / SOURCE LINK -->
+
+                <a
+                    id="modal-link"
+                    class="modal-link"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Read more about this photograph →
+                </a>
+
+
             </div>
 
+
         </div>
+
 
     </div>
 
 
 
-    <!-- JAVASCRIPT -->
+    <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
 
-  <script src="collection.js"></script>
+    <script src="collection.js"></script>
 
 
 </body>
